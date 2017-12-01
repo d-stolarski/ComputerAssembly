@@ -24,5 +24,12 @@ public class ComputerTest {
         ov.decreaseCpuClock(comp2, 0.5);
         ov.decreaseCpuClock(comp1, 0.2);
         ov.increaseCpuClock(comp2, 0.7);
+
+        ComputerAssembly ca = new ComputerAssembly();
+        Computer comp3 = ca.assembly("Laptop","AMD","Millenium",3.2,"HP","KingXR",1024,3.7);
+
+        System.out.printf("\nNazwa komputera: %s, Procesor: %s %s %.1fGhz, Pamięć: %s %s %dMB, %.1fGhz;\n\n",
+                comp3.name, comp3.procesor.producer, comp3.procesor.model, comp3.procesor.clocking, comp3.memory.producer,
+                comp3.memory.model, comp3.memory.value, comp3.memory.clocking);
     }
 }

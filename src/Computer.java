@@ -9,4 +9,6 @@ public class Computer {
         this.procesor = procesor;
         this.memory = memory;
     }
+
+    Computer() {}
 }
